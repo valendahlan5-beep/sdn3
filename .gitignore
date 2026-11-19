@@ -1,0 +1,16 @@
+# Dependencies
+backend/node_modules/
+node_modules/
+
+# Database & uploads (generated)
+backend/db.json
+backend/uploads/
+backend/server.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+" path="sdn-panunggangan-portal/.gitignore">

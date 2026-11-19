@@ -1,0 +1,7 @@
+node_modules
+backend/node_modules
+backend/db.json
+backend/uploads
+*.log
+.git
+" path="sdn-panunggangan-portal/.dockerignore">

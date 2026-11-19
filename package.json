@@ -1,0 +1,21 @@
+{
+  "name": "portal-sdn-panunggangan-3",
+  "version": "1.0.0",
+  "description": "Portal Sekolah SDN Panunggangan 3 Cibodas",
+  "scripts": {
+    "cap:add:android": "npx cap add android",
+    "cap:add:ios": "npx cap add ios",
+    "cap:sync": "npx cap sync",
+    "cap:open:android": "npx cap open android",
+    "cap:open:ios": "npx cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/ios": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0"
+  }
+}
+" path="sdn-panunggangan-portal/package.json">

@@ -1,0 +1,27 @@
+name: CI
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install backend deps
+        run: cd backend && npm install
+      - name: Seed database
+        run: cd backend && node seed.js
+      - name: Start server & health check
+        run: |
+          cd backend && node server.js &
+          sleep 4
+          curl -f http://localhost:3000/api/health
+      - name: Check frontend files
+        run: test -f index.html && test -f portal-lengkap.html && echo "OK"
+" path="sdn-panunggangan-portal/.github/workflows/ci.yml">

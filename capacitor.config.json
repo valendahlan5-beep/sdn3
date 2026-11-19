@@ -1,0 +1,10 @@
+{
+  "appId": "id.sdnpanunggangan3.portal",
+  "appName": "Portal SP3",
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
+" path="sdn-panunggangan-portal/capacitor.config.json">

@@ -1,0 +1,7 @@
+@echo off
+cd /d "%~dp0"
+start "" python -m http.server 8080
+timeout /t 2 /nobreak >nul
+start "" "http://localhost:8080/index.html"
+echo Server berjalan di http://localhost:8080. Tutup jendela ini untuk menghentikan.
+pause
